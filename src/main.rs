@@ -1,44 +1,67 @@
+use std::{
+    // any::type_name,
+    ops::{Range, RangeInclusive},
+};
+
 fn main() {
-    // let x: i32 = 5;
-    // let y: i32 = 4;
-
-    // assert_eq!(x, 5);
-    // assert_eq!(y, 4);
-    // println!("Success");
-
-    // let mut x = 1;
-    // x += 2;
-
-    // assert_eq!(x, 3);
-    // println!("Success");
-
     // let x = 5;
-    // {
-    //     let y = 5;
-    //     let x = 6;
-    //     println!("Inner scope value of x is {} and value of y is {}", x, y);
-    // }
+    // let mut y: &'static str = "Helo world";
+    // println!("x is: {} and y is: {}", x, y);
+    // y = "New value";
+    // println!("Now y is: {}", y);
 
-    // println!("Outer scope value of x is {}", x);
+    // let v: u16 = 38_u8 as u16;
+    // println!("Success! {}", v);
 
-    // let mut x: i32 = 1;
-    // x = 7;
-    // // Shadowing and re-binding
-    // // let x = x; 
-    // x += 3;
-
-
-    // let y = 4;
-    // // Shadowing
-    // let y = "I can also be bound to text!"; 
+    // let x: i32 = 5;
+    // assert_eq!("i32", type_of(&x));
 
     // println!("Success!");
 
-    let (mut x, y) = (1, 2);
-    x += 2;
+    // assert_eq!(i8::MAX, 127);
+    // assert_eq!(u8::MAX, 255);
 
-    assert_eq!(x, 3);
-    assert_eq!(y, 2);
+    // println!("Success!");
+    // let v1 = 247_u8 + 8;
+    // let v2 = i8::checked_add(119, 8).unwrap();
+    // println!("{},{}", v1, v2);
 
-    println!("Success!");
+    // let v = 1_024 + 0xff + 0o77 + 0b1111_1111;
+    // println!("v: {}", v);
+    // assert!(v == 1597);
+
+    // println!("Success!");
+
+    // let x = 1_000.000_1; // f64
+    // let y: f32 = 0.12; // f32
+    // let z = 0.01_f64; // f64
+
+    // assert_eq!(type_of(&x), "f64".to_string());
+    // println!("Success!");
+
+    // assert!(0.1f32 + 0.2f32 == 0.3f32);
+
+    // println!("Success!");
+
+    // let mut sum = 0;
+    // for i in -3..=2 {
+    //     sum += i
+    // }
+
+    // assert!(sum == -3);
+
+    // for c in 'a'..='z' {
+    //     println!("{}", c);
+    // }
+
+    // assert_eq!((1..4), Range { start: 1, end: 4 });
+    // assert_eq!((1..=5), RangeInclusive::new(1, 5));
+
+    // println!("Success!");
+
 }
+
+// Get the type of given variable, return a string representation of the type  , e.g "i8", "u8", "i32", "u32"
+// fn type_of<T>(_: &T) -> String {
+//     format!("{}", type_name::<T>())
+// }
